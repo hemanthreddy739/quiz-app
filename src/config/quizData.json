@@ -1,0 +1,172 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "title": "JavaScript Basics",
+      "description": "Test your knowledge of JavaScript fundamentals",
+      "category": "Programming",
+      "totalQuestions": 3,
+      "passingScore": 70
+    },
+    {
+      "id": "2",
+      "title": "React Advanced",
+      "description": "Advanced React concepts and patterns",
+      "category": "Frontend",
+      "totalQuestions": 3,
+      "passingScore": 75
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "quizId": "1",
+      "question": "What is the output of typeof NaN?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "NaN"
+        },
+        {
+          "id": "opt2",
+          "text": "number"
+        },
+        {
+          "id": "opt3",
+          "text": "undefined"
+        },
+        {
+          "id": "opt4",
+          "text": "object"
+        }
+      ],
+      "correctOptionId": "opt2",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q2",
+      "quizId": "1",
+      "question": "Which method is used to add elements to the end of an array?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "pop()"
+        },
+        {
+          "id": "opt2",
+          "text": "push()"
+        },
+        {
+          "id": "opt3",
+          "text": "shift()"
+        },
+        {
+          "id": "opt4",
+          "text": "unshift()"
+        }
+      ],
+      "correctOptionId": "opt2",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q3",
+      "quizId": "1",
+      "question": "What does async/await improve over callbacks?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Memory usage"
+        },
+        {
+          "id": "opt2",
+          "text": "Code readability and error handling"
+        },
+        {
+          "id": "opt3",
+          "text": "Execution speed"
+        },
+        {
+          "id": "opt4",
+          "text": "File size"
+        }
+      ],
+      "correctOptionId": "opt2",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q4",
+      "quizId": "2",
+      "question": "What is the purpose of useCallback hook in React?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "To cache a function definition"
+        },
+        {
+          "id": "opt2",
+          "text": "To manage state"
+        },
+        {
+          "id": "opt3",
+          "text": "To handle side effects"
+        },
+        {
+          "id": "opt4",
+          "text": "To optimize rendering performance"
+        }
+      ],
+      "correctOptionId": "opt1",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q5",
+      "quizId": "2",
+      "question": "What is context in React used for?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Managing local component state"
+        },
+        {
+          "id": "opt2",
+          "text": "Sharing data without prop drilling"
+        },
+        {
+          "id": "opt3",
+          "text": "Handling HTTP requests"
+        },
+        {
+          "id": "opt4",
+          "text": "Database operations"
+        }
+      ],
+      "correctOptionId": "opt2",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q6",
+      "quizId": "2",
+      "question": "Which hook should be used for data fetching in React?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "useState"
+        },
+        {
+          "id": "opt2",
+          "text": "useContext"
+        },
+        {
+          "id": "opt3",
+          "text": "useEffect"
+        },
+        {
+          "id": "opt4",
+          "text": "useReducer"
+        }
+      ],
+      "correctOptionId": "opt3",
+      "difficulty": "easy"
+    }
+  ]
+}
