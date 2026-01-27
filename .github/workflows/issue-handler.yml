@@ -2,12 +2,12 @@ name: Issue Handler Workflow
 
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [opened] 
 
 jobs:
   handle-issue:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -48,3 +48,11 @@ jobs:
         run: |  
           cat /tmp/issue_summary.md
 
+
+      if: github.event.action == 'labeled' && github.event.label.name == 'outage'
+      - name: Notify Team of Outage
+        run: |
+          echo "Alert: An issue labeled 'outage' has been opened. Notifying the on-call team..."
+          # Here you could add commands to send notifications via email, Slack, etc.
+
+          
