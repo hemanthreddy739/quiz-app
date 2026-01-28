@@ -25,5 +25,8 @@ module.exports = {
       statements: 70
     }
   },
+  reporters: [
+    'default'
+  ],
   verbose: true
 };

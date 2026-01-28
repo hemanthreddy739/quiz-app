@@ -8,6 +8,9 @@ dist/
 build/
 lib/
 
+# Test results
+test-results/
+
 # Environment variables
 .env
 .env.local
