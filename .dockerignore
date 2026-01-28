@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+PROJECT_SUMMARY.md
+WORKFLOW_ARCHITECTURE.md
+API_EXAMPLES.md
+.env.local
+coverage
+test-results
+dist
+.DS_Store
+.vscode
+.idea
