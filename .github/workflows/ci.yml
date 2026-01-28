@@ -27,14 +27,6 @@ jobs:
       - name: Run tests with coverage
         run: npm run test:coverage
 
-      # ------------------ VERIFY COVERAGE ------------------
-      - name: Verify coverage thresholds
-        run: |
-          echo "Checking coverage thresholds..."
-          npm test -- --coverage \
-            --collectCoverageFrom='src/**/*.js' \
-            --coveragePathIgnorePatterns='/node_modules/'
-
       # ------------------ BUILD ------------------
       - name: Build application
         run: npm run build
