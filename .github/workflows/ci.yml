@@ -23,14 +23,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ------------------ TESTS ------------------
-      - name: Run tests 
-        run: npm test
+      # ------------------ PREPARE TEST RESULTS DIR ------------------
+      - name: Create test-results directory
+        run: mkdir -p test-results
 
-      # ------------------ CODE COVERAGE ------------------
+      # ------------------ TESTS + COVERAGE ------------------
       - name: Run tests with coverage
-        run: npm run test:coverage
-
+        run: |
+          npm test
+          npm run test:coverage
 
       # ------------------ BUILD ------------------
       - name: Build application
