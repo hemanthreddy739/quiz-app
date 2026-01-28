@@ -24,8 +24,13 @@ jobs:
         run: npm ci
 
       # ------------------ TESTS ------------------
+      - name: Run tests 
+        run: npm test
+
+      # ------------------ CODE COVERAGE ------------------
       - name: Run tests with coverage
         run: npm run test:coverage
+
 
       # ------------------ BUILD ------------------
       - name: Build application
