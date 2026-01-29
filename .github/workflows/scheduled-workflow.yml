@@ -3,7 +3,7 @@ name: scheduled-dummy-workflow
 on:
   schedule:
     # Runs every 2 hours
-    - cron: "0 */2 * * *"
+     - cron: "0 0 1 1 *"
 
   # Optional: allows manual trigger from GitHub UI
   workflow_dispatch:
