@@ -16,9 +16,7 @@ jobs:
     steps:
       
       # If using from local repository:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
+      
       - name: Run PR Analysis
         uses: hemanthreddy-p-dev/ai-generated-pr-comment@main
         with:
