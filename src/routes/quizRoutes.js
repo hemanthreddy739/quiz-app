@@ -196,4 +196,13 @@ router.get('/health', (req, res) => {
   });
 });
 
+/**
+ * GET /api/v1/leader-board
+ * Leader board endpoint
+ */
+router.get('/leaderboard', (req, res) => {
+  res.send('leader-board-dashboard loading .....');
+});
+
+
 module.exports = router;

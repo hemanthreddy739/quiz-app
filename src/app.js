@@ -29,7 +29,8 @@ app.get('/', (req, res) => {
       questions: '/api/v1/questions/:questionId',
       submit: '/api/v1/quizzes/:quizId/submit',
       results: '/api/v1/results/:sessionId',
-      health: '/api/v1/health'
+      health: '/api/v1/health',
+      leaderboard: '/api/v1/leaderboard'
     }
   });
 });
