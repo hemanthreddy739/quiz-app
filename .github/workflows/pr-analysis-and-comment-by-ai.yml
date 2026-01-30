@@ -1,0 +1,26 @@
+# This is an example workflow that uses the AI PR Comment action
+name: PR Analysis and comment with Gemini
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+  
+
+jobs:
+  analyze-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      
+      # If using from local repository:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run PR Analysis
+        uses: hemanthreddy-p-dev/ai-generated-pr-comment@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          gemini-api-key: ${{ secrets.GEMINI_API_KEY }}
